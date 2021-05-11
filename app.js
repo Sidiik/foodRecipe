@@ -12,6 +12,7 @@ searchBtn.addEventListener("click", (e) => {
     .then((data) => {
       console.log(data);
       generateHTML(data.hits);
+      searchBox.value = "";
     })
     .catch((err) => {
       console.log(err);
