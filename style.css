@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.cont {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  text-align: center;
+  margin-top: 3rem;
+}
+.intro p {
+  width: 96%;
+  margin-top: 1.2rem;
+}
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.searchBox,
+.searchBtn {
+  padding: 0.3rem 2.4rem;
+  border: 2px solid #d55107;
+  outline: none;
+  border-radius: 30px;
+  flex-basis: 40%;
+}
+.searchBtn {
+  background: #d55107;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.searchBtn:hover {
+  background: #a34610;
+  border: 2px solid #a34610;
+}
+.results {
+  margin-top: 3rem;
+  width: 100%;
+}
+.results h2 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  width: 30%;
+  box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.521);
+  margin-bottom: 5em;
+  border-radius: 3px;
+}
+.card img {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 3px;
+}
+.content {
+  text-align: center;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .name {
+  font-weight: 900;
+  width: 50%;
+}
+.content .Type {
+  width: 40%;
+}
+.content .calories {
+  margin-top: 2rem;
+}
+.content a {
+  text-decoration: none;
+  border: 1px solid #4d8cf5;
+  padding: 0.345rem 0.654rem;
+  border-radius: 3px;
+  margin-top: 2rem;
+  transition: all 0.1s ease-in-out;
+}
+.content a:hover {
+  background: #4d8cf5;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .cont {
+    width: 100%;
+  }
+  .results {
+    width: 100%;
+  }
+  .cards {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    width: 87%;
+  }
+  .searchBox {
+    width: 70%;
+    margin: auto;
+  }
+  .results h2 {
+    font-size: 16px;
+  }
+  .content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .name {
+    font-size: 17px;
+    font-weight: 900;
+  }
+  .content .Type,
+  .name {
+    width: 100%;
+    margin-top: 0.6rem;
+  }
+}
